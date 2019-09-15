@@ -1,0 +1,5 @@
+<%= form_for(task) do |form| %>
+  任務名稱：<%= form.text_field :name %> <br>
+  任務內容：<%= form.text_area :content %> <br>
+  <%= form.submit %>  
+<% end %>
