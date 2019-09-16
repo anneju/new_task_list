@@ -5,6 +5,8 @@
     <tr>
       <th>任務名稱</th>
       <th>任務內容</th>
+      <th>任務開始時間</th>
+      <th>任務結束時間</th>
     </tr>
   </thead>
 
@@ -13,6 +15,8 @@
       <tr>
         <td><%= link_to task.name, task %></td>
         <td><%= task.content %></td>
+        <td><%= task.start_date %></td>
+        <td><%= task.end_date %></td>
         <td><%= link_to "更新", edit_task_path(task) %></td>
         <td><%= link_to "刪除", task, method: 'delete', data: {confirm: '確定要刪除嗎？'} %></td>
       </tr>
