@@ -1,3 +1,15 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+button a {
+  color: white;
+}
+
+button a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.go-to_index-button {
+  margin-top: 15px;
+}

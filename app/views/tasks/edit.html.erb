@@ -2,4 +2,6 @@
 
 <%= render 'form', task: @task %>
 
-<%= link_to "回到任務一覽表", tasks_path %>
+<div class="go-to_index-button">
+  <%= link_to "回到任務一覽表", tasks_path, class: "btn btn-secondary btn-lg btn-block" %>
+</div>

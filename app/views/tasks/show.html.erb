@@ -1,8 +1,31 @@
 <h1>檢視任務</h1>
 
-任務名稱：<%= @task.name %> <br>
-任務內容：<%= @task.content %> <br>
-任務開始時間：<%= @task.start_date %> <br>
-任務結束時間：<%= @task.end_date %> <br>
+<div>
+  
+  <label for="task_name">任務名稱</label>
+  <ul class="list-group">
+    <li class="list-group-item col"><%= @task.name %></li> 
+  </ul>
 
-<%= link_to "回到任務一覽表", tasks_path %>
+  <label for="task_name">任務內容</label>
+  <ul class="list-group">
+    <li class="list-group-item col"><%= @task.content %></li> 
+  </ul>
+
+  <label for="task_name">任務開始時間</label>
+  <ul class="list-group">
+    <li class="list-group-item col"><%= @task.start_date %></li> 
+  </ul>
+
+  <label for="task_name">任務結束時間</label>
+  <ul class="list-group">
+    <li class="list-group-item col"><%= @task.end_date %></li> 
+  </ul>
+
+</div>
+
+<div class="go-to_index-button">
+  <%= link_to "回到任務一覽表", tasks_path, class: "btn btn-secondary btn-lg btn-block" %>
+</div>
+
+
